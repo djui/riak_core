@@ -39,8 +39,10 @@
              riak_core_vnode_master,
              riak_core_vnode_sup,
              riak_core_web,
+             ring_resource,
              slide,
              spiraltime,
+             static_resource,
              vclock
             ]},
   {registered, []},
@@ -88,6 +90,10 @@
          %% Number of VNodes allowed to do handoff concurrently.
          {handoff_concurrency, 4},
 
+         %% Webmachine IP/port
+         {web_port, 8089},
+         {web_ip, "0.0.0.0"},
+         
          %% Handoff IP/port
          {handoff_port, 8099},
          {handoff_ip, "0.0.0.0"}

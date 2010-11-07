@@ -46,4 +46,5 @@ config() ->
      {port, app_helper:get_env(riak_core, web_port)},
      {log_dir, app_helper:get_env(riak_core, web_logdir, "log")},
      {backlog, 128},
-     {dispatch, []}].
+     {dispatch, [{["ring"], ring_resource, []},
+                 {['*'], static_resource, ["www"]}]}].
