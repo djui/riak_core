@@ -2,7 +2,7 @@
 %% @copyright Daniel Kwiecinski.
 %% @doc Static webmachine resource.
  
--module(static_resource).
+-module(riak_core_wm_static_resource).
 -export([init/1, allowed_methods/2,
          content_types_provided/2, resource_exists/2, last_modified/2, provide_content/2]).
  

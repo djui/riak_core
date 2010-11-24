@@ -1,6 +1,6 @@
 %%% @doc Ring visualization resource.
 %%% @author Uwe Dauernheim <uwe@dauernheim.net>
--module(ring_resource).
+-module(riak_core_wm_ring_resource).
 
 -author("Uwe Dauernheim <uwe@dauernheim.net>").
 

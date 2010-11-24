@@ -47,5 +47,6 @@ config() ->
      {log_dir, app_helper:get_env(riak_core, web_logdir, "log")},
      {backlog, 128},
      {dispatch, [{[], riak_core_wm_urlmap, []},
-                 {["ring"], riak_core_wm_ring_resource, []},
-                 {['*'], riak_core_wm_static_resource, ["www"]}]}].
+                 {["ring"], riak_core_wm_ring_resource, []}]}].
+%%               {["ring"], riak_core_wm_ring_resource, []},
+%%               {['*'], riak_core_wm_static_resource, ["www"]}]}].
